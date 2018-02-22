@@ -4,10 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <link href="formulaire_login.css" rel="stylesheet" type="text/css"/>
-        
-        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
     </head>
     <body>
+        <?php include "headbootstrap.php" ?>
         <form method="post" action="hallchatroom">
             <table>
                 <tr>

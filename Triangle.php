@@ -65,6 +65,7 @@ class Triangle extends Polygone {
             
             $reqPoints->execute();
             $resultatPoint=$reqPoints->fetchAll();
+            
             $points=[];
             
             foreach ($resultatPoint as $lignePoint) {
@@ -79,7 +80,6 @@ class Triangle extends Polygone {
         }
         
         $db=null;
-
         return $tri;
     }
 }

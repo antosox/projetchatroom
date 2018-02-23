@@ -95,7 +95,8 @@ class Polygone {
           $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE
                 , Config::UTILISATEUR, Config::MOTDEPASSE);
 
-        $req = $db->prepare("DELETE FROM polygones WHERE polygones.id =").$id;
+        $req = $db->prepare("DELETE FROM polygones WHERE idPolygones =:id");
+        $req->bindParam(":id", $id);
         $req->execute();
         $db = null;
     }
